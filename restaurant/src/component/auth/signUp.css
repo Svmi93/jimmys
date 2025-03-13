@@ -1,0 +1,142 @@
+
+
+/* ✅ NAVIGATION FIXE */
+nav {
+    width: 100%;
+    background: #116530;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+/* 🌟 CONTAINER INSCRIPTION CENTRÉ */
+.signup-container {
+    width: 100%;
+    max-width: 500px;
+    min-height: calc(100vh - 80px); /* Prend toute la hauteur en enlevant la navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 📌 FORMULAIRE INSCRIPTION */
+.signup-form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    margin-left: 350%;
+}
+
+/* 📌 TITRE */
+.signup-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 📌 CHAMPS DE FORMULAIRE */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* 📌 CHAMP UPLOAD */
+.input-group input[type="file"] {
+    padding: 5px;
+}
+
+/* 📌 APERÇU IMAGE */
+.preview-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.preview-container p {
+    font-weight: bold;
+}
+
+.preview-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    margin-top: 5px;
+}
+
+/* 📌 BOUTON */
+.btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* 📌 FOOTER FIXÉ EN BAS */
+footer {
+    width: 100%;
+    background: #116530;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+}
